@@ -3,7 +3,7 @@ name: print hello.txt file content
 on: 
   push:
     branches:
-      -master
+      - master
 
 jobs:
   read_file:
