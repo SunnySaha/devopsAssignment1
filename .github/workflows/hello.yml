@@ -1,0 +1,15 @@
+name: print hello.txt file content
+
+on: 
+  push:
+    branches:
+      -master
+
+jobs:
+  read_file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+      - name: Read the hello txt file
+        runs: cat hello.txt
